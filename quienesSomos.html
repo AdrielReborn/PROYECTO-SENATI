@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Quiénes Somos | Escuela Superior SENATI</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --senati-blue: #002F6C; 
+            --senati-cyan: #0056b3;
+            --dark-bg: #0f141c;     
+            --card-bg: #17202a;     
+            --border-color: #2c3e50;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            text-align: center;
+        }
+
+        h1, h2, h3, .nav-link {
+            font-family: 'Oswald', sans-serif;
+        }
+
+        /* Banner Header */
+        .banner-header {
+            background-color: var(--senati-blue);
+            padding: 35px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 4px solid #0080ff;
+            box-shadow: 0 4px 25px rgba(0, 47, 108, 0.4);
+        }
+
+        .banner-header img {
+            max-width: 260px;
+            height: auto;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #0b0f14 !important;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .navbar-nav {
+            margin: 0 auto;
+        }
+
+        .nav-link {
+            color: #ffffff !important;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 0 12px;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #0080ff !important;
+        }
+
+        .nav-link.active {
+            color: #0080ff !important;
+            border-bottom: 2px solid #0080ff;
+        }
+
+        /* Bloque de Contenido Semántico */
+        .contenido {
+            margin: 40px auto;
+            max-width: 950px;
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border-top: 4px solid var(--senati-cyan);
+            text-align: left;
+        }
+
+        .contenido h2 {
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 2.4rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitulo-seccion {
+            color: #38bdf8;
+            font-weight: 500;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 15px;
+        }
+
+        /* Tarjetas de Identidad */
+        .card-identidad {
+            background-color: #111a24;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+            height: 100%;
+            transition: 0.3s;
+        }
+
+        .card-identidad:hover {
+            border-color: #0080ff;
+            transform: translateY(-3px);
+        }
+
+        .card-identidad img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-identidad .card-body {
+            padding: 20px;
+        }
+
+        .card-identidad .card-title {
+            color: #ffffff;
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card-identidad .card-text {
+            color: #e2e8f0 !important; /* Alto contraste garantizado */
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Lista de Valores */
+        .valores-lista {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .valores-lista li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+            color: #e2e8f0;
+        }
+
+        .valores-lista li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #38bdf8;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0b0f14;
+            padding: 30px;
+            margin-top: 60px;
+            border-top: 1px solid var(--border-color);
+            color: #a3b1c2;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="banner-header">
+        <img src="https://www.senati.edu.pe/sites/all/themes/senati_theme/img/logo.svg" alt="Senati">
+    </header>
+
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="quienesSomos.html">Quiénes Somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nuestrosServicios.html">Nuestros Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sucursales.html">Sucursales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ubicacion.html">Ubicación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactanos.html">Contáctanos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reclamos.html">Reclamos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="contenido">
+            <h2>Nuestra Institución</h2>
+            <div class="subtitulo-seccion">Líderes globales en formación tecnológica de vanguardia</div>
+            
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card-identidad">
+                        <img src="recursos/Frame-321-1-1.jpg" alt="Misión Institucional">
+                        <div class="card-body">
+                            <h3 class="card-title">Nuestra Misión</h3>
+                            <p class="card-text">Formar profesionales técnicos ingenieros altamente competitivos y calificados en tecnologías emergentes, impulsando la productividad de la industria peruana mediante soluciones digitales innovadoras.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card-identidad">
+                        <img src="recursos/carrera-1.jpg" alt="Visión de Futuro">
+                        <div class="card-body">
+                            <h3 class="card-title">Nuestra Visión</h3>
+                            <p class="card-text">Ser reconocidos internacionalmente como la institución educativa referente en América Latina para el despliegue de software avanzado, inteligencia artificial y ciberseguridad industrial aplicada.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="card-identidad p-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <img src="recursos/carrera.jpg" class="rounded img-fluid" alt="Valores Tecnológicos" style="height: 220px; width: 100%; object-fit: cover;">
+                            </div>
+                            <div class="col-md-7">
+                                <h3 class="card-title">Valores de la Escuela Superior</h3>
+                                <p class="card-text">Nuestros estudiantes crecen bajo una sólida cultura ética y tecnológica, orientada a la excelencia industrial:</p>
+                                <ul class="valores-lista">
+                                    <li><strong>Innovación Disruptiva:</strong> Rompemos esquemas para crear herramientas de futuro.</li>
+                                    <li><strong>Integridad y Compromiso:</strong> Transparencia absoluta en el manejo de activos de datos.</li>
+                                    <li><strong>Trabajo Colaborativo de Alta Eficiencia:</strong> Cooperación efectiva en entornos de desarrollo ágiles.</li>
+                                    <li><strong>Orientación a la Calidad Total:</strong> Rigurosidad analítica y precisión científica en cada proyecto.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 SENATI | Dirección de Tecnologías de la Información</p>
+        <p><small>Proyecto desarrollado por Adriel Mendoza Chambilla — Ingeniería de Ciencia de Datos e IA</small></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

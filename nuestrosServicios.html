@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Nuestros Servicios | Escuela Superior SENATI</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --senati-blue: #002F6C; /* Azul oscuro de la cabecera según imagen */
+            --senati-cyan: #0056b3;
+            --dark-bg: #0f141c;     /* Fondo general de la web */
+            --card-bg: #17202a;     /* Fondo de las tarjetas y contenedor */
+            --border-color: #2c3e50;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            text-align: center;
+        }
+
+        h1, h2, h3, .nav-link {
+            font-family: 'Oswald', sans-serif;
+        }
+
+        /* Banner Header */
+        .banner-header {
+            background-color: var(--senati-blue);
+            padding: 35px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 4px solid #0080ff;
+            box-shadow: 0 4px 25px rgba(0, 47, 108, 0.4);
+        }
+
+        .banner-header img {
+            max-width: 260px;
+            height: auto;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #0b0f14 !important;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .navbar-nav {
+            margin: 0 auto;
+        }
+
+        .nav-link {
+            color: #ffffff !important;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 0 12px;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #0080ff !important;
+        }
+
+        .nav-link.active {
+            color: #0080ff !important;
+            border-bottom: 2px solid #0080ff;
+        }
+
+        /* Bloque de Contenido Semántico */
+        .contenido {
+            margin: 40px auto;
+            max-width: 950px;
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border-top: 4px solid var(--senati-cyan);
+            text-align: left;
+        }
+
+        .contenido h2 {
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 2.4rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitulo-escuela {
+            color: #0080ff;
+            font-weight: 500;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 15px;
+        }
+
+        /* Estilos de las Tarjetas de Carreras (Modo Oscuro) */
+        .card-carrera {
+            background-color: #111a24;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+            height: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-carrera:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 128, 255, 0.2);
+            border-color: #0080ff;
+        }
+
+        .card-carrera img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-carrera .card-body {
+            padding: 20px;
+        }
+
+        .card-carrera .card-title {
+            color: #ffffff;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .card-carrera .card-text {
+            color: #a3b1c2;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0b0f14;
+            padding: 30px;
+            margin-top: 60px;
+            border-top: 1px solid var(--border-color);
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="banner-header">
+        <img src="https://www.senati.edu.pe/sites/all/themes/senati_theme/img/logo.svg" alt="Senati">
+    </header>
+
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="quienesSomos.html">Quiénes Somos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="nuestrosServicios.html">Nuestros Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sucursales.html">Sucursales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ubicacion.html">Ubicación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactanos.html">Contáctanos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reclamos.html">Reclamos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="contenido">
+            <h2>Nuestros Servicios Educativos</h2>
+            <div class="subtitulo-escuela">Escuela Superior de Alta Tecnología - Carreras Profesionales de Ingeniería</div>
+            
+            <div class="row g-4">
+                
+                <div class="col-md-6">
+                    <div class="card-carrera">
+                        <img src="recursos/photo-1526374965328-7f61d4dc18c5.avif" alt="Ingeniería de Ciberseguridad">
+                        <div class="card-body">
+                            <h3 class="card-title">Ingeniería de Ciberseguridad</h3>
+                            <p class="card-text">Formamos profesionales capaces de diseñar e implementar arquitecturas de seguridad robustas, protegiendo los activos digitales y la infraestructura crítica contra amenazas informáticas complejas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card-carrera">
+                        <img src="recursos/photo-1555066931-4365d14bab8c.avif" alt="Ingeniería de Software con Inteligencia Artificial">
+                        <div class="card-body">
+                            <h3 class="card-title">Ingeniería de Software con Inteligencia Artificial</h3>
+                            <p class="card-text">Especialización centrada en el desarrollo de aplicaciones inteligentes y sistemas autónomos, aplicando machine learning, redes neuronales y algoritmos lógicos avanzados.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card-carrera">
+                        <img src="recursos/gerente-proyecto-e-ingeniero-ciencias-computacion-discutiendo-mientras-usa-sala-oficina-computadora-tableta-digital-control-monitoreo-sistema-ia-generativa-negocios-telec.webp" alt="Ingeniería de Ciencia de Datos e Inteligencia Artificial">
+                        <div class="card-body">
+                            <h3 class="card-title">Ingeniería de Ciencia de Datos e Inteligencia Artificial</h3>
+                            <p class="card-text">Capacitación experta en procesamiento de grandes volúmenes de datos (Big Data), minería de datos, análisis predictivo y despliegue de modelos de IA industriales.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card-carrera">
+                        <img src="recursos/young-contemporary-cyber-security-manager-typing-front-computer.webp" alt="Ingeniería de Tecnologías de la Información y Comunicación">
+                        <div class="card-body">
+                            <h3 class="card-title">Ingeniería de Tecnologías de la Información y Comunicación</h3>
+                            <p class="card-text">Gestión y despliegue de infraestructura de red moderna, conectividad industrial, soluciones integradas en la nube y administración de data centers de alta disponibilidad.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 SENATI | Dirección de Tecnologías de la Información</p>
+        <p><small>Proyecto desarrollado por Adriel Mendoza Chambilla — Ingeniería de Ciencia de Datos e IA</small></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
