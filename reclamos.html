@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Libro de Reclamaciones | Aula Virtual SENATI</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --senati-blue: #002F6C; /* Azul oscuro de la cabecera */
+            --senati-cyan: #0056b3;
+            --dark-bg: #0f141c;     /* Fondo de la web */
+            --card-bg: #17202a;     /* Fondo del bloque de contenido */
+            --border-color: #2c3e50;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            text-align: center;
+        }
+
+        h1, h2, h3, .nav-link {
+            font-family: 'Oswald', sans-serif;
+        }
+
+        /* Banner Header con el azul de la imagen */
+        .banner-header {
+            background-color: var(--senati-blue);
+            padding: 35px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 4px solid #0080ff;
+            box-shadow: 0 4px 25px rgba(0, 47, 108, 0.4);
+        }
+
+        .banner-header img {
+            max-width: 260px;
+            height: auto;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #0b0f14 !important;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .navbar-nav {
+            margin: 0 auto;
+        }
+
+        .nav-link {
+            color: #ffffff !important;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 0 12px;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #0080ff !important;
+        }
+
+        .nav-link.active {
+            color: #0080ff !important;
+            border-bottom: 2px solid #0080ff;
+        }
+
+        /* Bloque de Contenido Semántico */
+        .contenido {
+            margin: 40px auto;
+            max-width: 850px;
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border-left: 5px solid var(--senati-cyan);
+            text-align: left;
+        }
+
+        .contenido h2 {
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 2.4rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        /* Elementos del Formulario Estilizados */
+        .form-control, .form-select {
+            background-color: #0f141c;
+            border: 1px solid var(--border-color);
+            color: #fff !important;
+            padding: 10px;
+        }
+
+        .form-control:focus, .form-select:focus {
+            background-color: #1f2a38;
+            border-color: #0080ff;
+            box-shadow: 0 0 8px rgba(0, 128, 255, 0.3);
+        }
+
+        .form-control::placeholder {
+            color: #555;
+        }
+
+        .btn-submit {
+            background-color: var(--senati-cyan);
+            color: white;
+            font-weight: bold;
+            border: none;
+            padding: 12px 25px;
+            width: 100%;
+            transition: 0.3s;
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-submit:hover {
+            background-color: #0080ff;
+            box-shadow: 0 0 15px rgba(0, 128, 255, 0.4);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0b0f14;
+            padding: 30px;
+            margin-top: 60px;
+            border-top: 1px solid var(--border-color);
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="banner-header">
+        <img src="https://www.senati.edu.pe/sites/all/themes/senati_theme/img/logo.svg" alt="Senati">
+    </header>
+
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="quienesSomos.html">Quiénes Somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nuestrosServicios.html">Nuestros Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sucursales.html">Sucursales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ubicacion.html">Ubicación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactanos.html">Contáctanos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="reclamos.html">Reclamos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="contenido">
+            <h2>Libro de Reclamaciones Virtual</h2>
+            <p class="text-center text-muted mb-4">Conforme a las normativas de atención al estudiante de la institución.</p>
+
+            <form action="#" method="POST">
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="idEstudiante" class="form-label text-white small text-uppercase">ID de Aprendiz / DNI</label>
+                        <input type="text" class="form-control" id="idEstudiante" required placeholder="Ej. 00123456">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="tipo" class="form-label text-white small text-uppercase">Tipo de Solicitud</label>
+                        <select class="form-select" id="tipo" required>
+                            <option value="" selected disabled>Selecciona una opción</option>
+                            <option value="reclamo">Reclamo (Disconformidad con el servicio)</option>
+                            <option value="queja">Queja (Malestar o desatención)</option>
+                            <option value="soporte">Soporte con la plataforma académica</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="detalle" class="form-label text-white small text-uppercase">Detalle del Reclamo o Sugerencia</label>
+                    <textarea class="form-control" id="detalle" rows="5" required placeholder="Redacta de forma clara los hechos ocurridos con la plataforma o servicio..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-submit">Registrar Reclamo</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 SENATI | Dirección de Tecnologías de la Información</p>
+        <p><small>Proyecto desarrollado por Adriel Mendoza Chambilla — Ingeniería de Ciencia de Datos e IA</small></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
